@@ -1,0 +1,25 @@
+PS C:\Users\taichi> mkdir git_challege
+
+----                 -------------         ------ ----                               
+d-----        2025/03/08     15:45                git_challege                       
+
+PS C:\Users\taichi> cd git_challege
+PS C:\Users\taichi\git_challege> git init
+Initialized empty Git repository in C:/Users/taichi/git_challege/.git/
+PS C:\Users\taichi\git_challege> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\taichi\git_challege> git add hello_world.txt
+PS C:\Users\taichi\git_challege> git commit -m "hello_world.txtを追加"
+[main (root-commit) 8d872d6] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\taichi\git_challege> echo "Hello, world!" "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\taichi\git_challege> git add hello_world.txt
+PS C:\Users\taichi\git_challege> git commit -m "日本語訳を追記"
+[main 30b7ac2] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\taichi\git_challege> cat hello_world.txt
+Hello, world!
+こんにちは、世界！
+PS C:\Users\taichi\git_challege> git log --oneline
+30b7ac2 (HEAD -> main) 日本語訳を追記
+8d872d6 hello_world.txtを追加
