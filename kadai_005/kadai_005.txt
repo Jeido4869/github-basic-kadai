@@ -1,0 +1,31 @@
+PS C:\Users\taichi> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\taichi
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/03/08     18:55                git_challenge
+
+
+PS C:\Users\taichi> cd git_challenge
+PS C:\Users\taichi\git_challenge> git init
+Initialized empty Git repository in C:/Users/taichi/git_challenge/.git/
+PS C:\Users\taichi\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\taichi\git_challenge> git add hello_world.txt
+PS C:\Users\taichi\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 9331abb] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 hello_world.txt
+PS C:\Users\taichi\git_challenge> Add-Content hello_world.txt "こんにちは、世界！"
+PS C:\Users\taichi\git_challenge> cat hello_world.txt
+Hello, world!
+こんにちは、世界！
+PS C:\Users\taichi\git_challenge> git add hello_world.txt
+PS C:\Users\taichi\git_challenge> git commit -m "日本語訳を追記"
+[main 3991138] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\taichi\git_challenge> git log --oneline
+3991138 (HEAD -> main) 日本語訳を追記
+9331abb hello_world.txtを追加    
